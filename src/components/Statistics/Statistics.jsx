@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import StatisticsItem from './StatisticsItem';
 
 const Statistics = ({ title, stats }) => {
-  console.log(stats);
   return (
     <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
