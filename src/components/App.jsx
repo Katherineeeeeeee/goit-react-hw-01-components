@@ -7,17 +7,20 @@ import data from '../Files/data.json';
 import FriendList from './FriendList/FriendList';
 import friends from '../Files/friends.json';
 
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from '../Files/transactions.json';
+
 export const App = () => {
   return (
     <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
+      // style={{
+      //   height: '100vh',
+      //   display: 'flex',
+      //   justifyContent: 'center',
+      //   alignItems: 'center',
+      //   fontSize: 40,
+      //   color: '#010101',
+      // }}
     >
       <Profile
         username={user.username}
@@ -32,6 +35,8 @@ export const App = () => {
       <Statistics stats={data} />
 
       <FriendList friends={friends} />;
+
+      <TransactionHistory items={transactions} />;
     </div>
   );
 };
